@@ -51,7 +51,7 @@
 #mainCode .index_icon_hand {
     background: url(http://edu.bluej.cn/public/uploads/20190105/20190105202345index_icon_hand.png) no-repeat;
     width: 640rpx;
-    height: 440rpx;
+    height: 330rpx;
     background-size: 100% 100%;
     position: absolute;
     bottom: 30rpx;
@@ -59,15 +59,40 @@
     left: 50%;
     transform: translateX(-50%);
 }
+#mainCode .icon_blink2_box image,
+#mainCode .icon_blink3_box image{
+    width: 70rpx;
+    height: 70rpx;
+}
 #mainCode .icon_blink2_box,
-#mainCode .icon_blink3_box {
+#mainCode .icon_blink3_box{
     display: inline-block;
-    top: -40rpx;
-    position: relative;
+    top: 690rpx;
+    position: absolute;
 }
 #mainCode .icon_blink2_box {
-  left: -260rpx;
+  left: 50rpx;
 }
 #mainCode .icon_blink3_box {
-  right: -265rpx;
+  right: 40rpx;
+}
+/* 扫一扫，我的邮卡 */
+#mainCode .btn_scan image,
+#mainCode .btn_mycard image {
+    width: 100%;
+}
+#mainCode .btn_scan,
+#mainCode .btn_mycard {
+    width: 274rpx;
+    height: 74rpx;
+    position: absolute;
+    margin-bottom: 18rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#mainCode .btn_scan {
+    top: 580rpx;
+}
+#mainCode .btn_mycard {
+    top: 676rpx;
 }
