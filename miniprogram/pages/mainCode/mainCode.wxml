@@ -1,0 +1,27 @@
+<!-- 扫邮主界面 -->
+
+<view id="mainCode">
+<!-- 背景 -->
+  <view class="borderBg" hover-class="none" hover-stop-propagation="false">
+      <!-- top 背景-->
+    <view class='icon_title'></view>
+    <!-- 游客来驿站背景 -->
+    <view class="scan_icon_article" hover-class="none" hover-stop-propagation="false"></view>
+    <!-- 下划线 -->
+    <view class="scan_icon_underline" hover-class="none" hover-stop-propagation="false">
+    </view>
+    <!-- 文字 -->
+    <view class="index_icon_guide" hover-class="none" hover-stop-propagation="false">     
+    </view>
+    <!-- 左右两侧图片 -->
+    <view class="icon_blink2_box" hover-class="none" hover-stop-propagation="false">
+        <image class="icon_blink2" style="width: 70rpx;height: 70rpx" src="../../images/caoCode/icon_blink2.png" mode="widthFix"></image>
+    </view>
+    <view class="icon_blink3_box" hover-class="none" hover-stop-propagation="false">
+        <image class="icon_blink3" style="width: 70rpx;height: 70rpx"  src="../../images/caoCode/icon_blink3.png" mode="widthFix"></image>
+    </view>
+    <!-- index_icon_hand -->
+    <view class="index_icon_hand" hover-class="none" hover-stop-propagation="false">
+    </view>
+  </view>
+</view>
