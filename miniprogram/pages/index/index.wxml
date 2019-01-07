@@ -1,43 +1,40 @@
-<!--index.wxml-->
-<view class="container">
+<!-- 扫邮主界面 -->
 
-  <!-- 用户 openid -->
-  <view class="userinfo">
-    <button 
-      open-type="getUserInfo" 
-      bindgetuserinfo="onGetUserInfo"
-      class="userinfo-avatar"
-      style="background-image: url({{avatarUrl}})"
-    ></button>
-    <view>
-      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+<view id="mainCode">
+<!-- 背景 -->
+  <view class="borderBg" hover-stop-propagation="false">
+      <!-- top 背景-->
+    <view class='icon_title'></view>
+    <!-- 游客来驿站背景 -->
+    <view class="scan_icon_article" hover-stop-propagation="false"></view>
+    <!-- 下划线 -->
+    <view class="scan_icon_underline" hover-stop-propagation="false">
+    </view>
+    <!-- 文字 -->
+    <view class="index_icon_guide" hover-stop-propagation="false">     
+    </view>
+    <!-- 扫一扫和我的邮卡 -->
+    <view class="btn_scan" hover-stop-propagation="false">
+      <!-- 跳到 scan页面-->
+      <navigator class="" hover-class="none" url="../scan/scan" open-type="navigate">
+        <image src="../../images/caoCode/btn_scan.png" mode="widthFix" bind:tap=""></image>
+      </navigator>   
+    </view>
+    <view class="btn_mycard" hover-stop-propagation="false">
+      <!-- 跳到 我的邮卡页面-->
+      <navigator class="" hover-class="none" target="" url="../mycard/mycard" open-type="navigate">
+        <image src="../../images/caoCode/btn_mycard.png" mode="widthFix"></image>
+      </navigator>        
+    </view>
+    <!-- 左右两侧图片 -->
+    <view class="icon_blink2_box" hover-stop-propagation="false">
+        <image class="icon_blink2" src="../../images/caoCode/icon_blink2.png" mode="widthFix"></image>
+    </view>
+    <view class="icon_blink3_box" hover-stop-propagation="false">
+        <image class="icon_blink3" src="../../images/caoCode/icon_blink3.png" mode="widthFix"></image>
+    </view>
+    <!-- index_icon_hand -->
+    <view class="index_icon_hand" hover-stop-propagation="false">
     </view>
   </view>
-
-
-  <!-- 上传图片 -->
-  <view class="uploader">
-    <view class="uploader-text" bindtap="doUpload">
-      <text>上传图片</text>
-    </view>
-    <view class="uploader-container" wx:if="{{imgUrl}}">
-      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
-    </view>
-  </view>
-
-
-  <!-- 操作数据库 -->
-  <view class="uploader">
-    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
-      <text>前端操作数据库</text>
-    </navigator>
-  </view>
-
-  <!-- 新建云函数 -->
-  <view class="uploader">
-    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
-      <text>快速新建云函数</text>
-    </navigator>
-  </view>
-
 </view>

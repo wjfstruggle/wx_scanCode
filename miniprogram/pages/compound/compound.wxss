@@ -1,0 +1,68 @@
+/* miniprogram/pages/compound/compound.wxss */
+
+#mainCode .mycard_icon_title {
+    position: relative;
+    top: 30rpx;
+    z-index: -5;
+    width: 100%;
+    height: 779rpx;
+    background: url(http://edu.bluej.cn/public/uploads/20190106/20190106210704mycard_icon_title.png) no-repeat;
+    background-size: 100% 100%;
+}
+#mainCode .mycard_icon_present {
+    position: relative;
+    top: -20rpx;
+    z-index: -15;
+    width: 688rpx;
+    height: 256rpx;
+    background: url(http://edu.bluej.cn/public/uploads/20190106/20190106211357mycard_icon_present.png) no-repeat;
+    background-size: 100% 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mycard_btn_hecheng_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 210rpx;
+    height: 202rpx;
+}
+.mycard_btn_hecheng_box .mycard_btn_hecheng{ 
+    width: 100%;
+}
+#mainCode .mycard_icon_border {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -15;
+    width: 100%;
+    height: 210rpx;
+    background: url(http://edu.bluej.cn/public/uploads/20190106/20190106213333mycard_icon_broad.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* 邮卡选择 */
+#mainCode .mycard_icon_select {
+    padding: 0 32rpx;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+#mainCode .mycard_icon_bgpost_wrap {
+    flex: 1;
+    margin-top: 18rpx;
+    width: 122rpx;
+    height: 127rpx;
+}
+#mainCode .mycard_icon_bgpost {
+    width: 100%;
+    height: 127rpx;
+    background: url(http://edu.bluej.cn/public/uploads/20190106/20190106222304mycard_icon_bgpost.png) no-repeat;
+    background-size: 100% 100%; 
+}
+#mainCode .mycard_icon_bgpost_wrap text {
+    font-size:24rpx;
+    color:#fff;
+    position: relative;
+    top: -17rpx;
+}

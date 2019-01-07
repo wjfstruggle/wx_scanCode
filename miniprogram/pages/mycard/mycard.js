@@ -1,4 +1,4 @@
-// miniprogram/pages/mainCode/mainCode.js
+// miniprogram/pages/mycard/mycard.js
 Page({
 
   /**

@@ -1,0 +1,16 @@
+<!--扫邮结果-->
+<!-- 扫邮主界面 -->
+
+<view id="mainCode">
+<!-- 背景 -->
+     <view class="borderBg" hover-class="none" hover-stop-propagation="false">
+      <!-- top 背景-->
+        <view class='icon_title2'></view>
+        <!-- 邮薪贷 -->
+        <view class="product_detail" hover-class="none" hover-stop-propagation="false">
+            <text class="" selectable="false" space="false" decode="false">
+                无抵押，纯信用，全程线上办理，10分钟到账 每月逢“8”申请，即8、18、28号， 年利率低至5.65% 最高可贷30万元，贷款期限最长3年
+            </text>
+        </view>
+    </view>
+</view>

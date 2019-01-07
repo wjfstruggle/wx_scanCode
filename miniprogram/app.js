@@ -9,7 +9,21 @@ App({
         traceUser: true,
       })
     }
+    // 调用云函数
+    wx.cloud.callFunction({
+      // 要调用的云函数名称
+      name: 'sign',
+      data: {
 
-    this.globalData = {}
+      },
+      success: res => {
+        // 将sign值存到globalData
+        console.log(res);
+        this.globalData.sign = res.result.sign
+      }
+    })
+    this.globalData = {
+      sign: null
+    }
   }
 })

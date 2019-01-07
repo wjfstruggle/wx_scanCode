@@ -1,0 +1,8 @@
+<!-- 拍照组件 -->
+<camera
+  device-position="back"
+  flash="off"
+  binderror="error"
+  style="width: 750rpx; height: 250px;"
+></camera>
+<image src="../../images/caoCode/btn_scan.png" mode="widthFix" type="primary" bindtap="takePhoto">拍照</image>
