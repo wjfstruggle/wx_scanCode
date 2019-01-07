@@ -1,0 +1,9 @@
+<!-- 左右两侧图片 -->
+<template name="icon_blink">
+    <view class="icon_blink2_box" hover-stop-propagation="false">
+        <image class="icon_blink2" src="../../images/caoCode/icon_blink2.png" mode="widthFix"></image>
+    </view>
+    <view class="icon_blink3_box" hover-stop-propagation="false">
+        <image class="icon_blink3" src="../../images/caoCode/icon_blink3.png" mode="widthFix"></image>
+    </view>
+</template>

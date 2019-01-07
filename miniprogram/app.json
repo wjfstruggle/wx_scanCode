@@ -4,7 +4,8 @@
     "pages/compound/compound",
     "pages/result/result",
     "pages/mycard/mycard",
-    "pages/scan/scan"
+    "pages/scan/scan",
+    "pages/template/template"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

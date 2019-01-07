@@ -9,6 +9,9 @@ Page({
 
   },
   takePhoto() {
+    wx.showLoading({
+      title: '加载中',
+    })
     // 1、拍下一张照片
     // this.getPhoto()
     // 将照片转为base64 
@@ -19,7 +22,35 @@ Page({
      return this.txApi(base64);
     }).then(res => {
       // 4、判断结果
-      console.log(res);      
+      console.log(res);
+      let items = res.data.data.items;
+      // 遍历数组，查找邮字
+      let hasYou = items.some( item => {
+        return item.itemstring.indexOf('邮') > -1
+      })    
+      console.log('hasYou', hasYou); 
+      hasYou = true
+      // 判断是否有邮字 
+      if (hasYou) {
+        wx.showToast({
+          title: '恭喜，有邮字',
+          icon: 'success',
+          duration: 2000
+        })
+        // 创建记录
+        wx.cloud.callFunction({
+          name: 'getYou',
+          success: res => {
+            console.log('getYou', res);           
+          }
+        })
+      } else {
+        wx.showToast({
+          title: '没扫到邮字，请再试一遍',
+          icon: 'none',
+          duration: 2000
+        })
+      }
     })
     
   },
@@ -28,7 +59,7 @@ Page({
     return new Promise( (resolve, reject) => {
       const ctx = wx.createCameraContext()  
       ctx.takePhoto({
-        quality: 'high',
+        quality: 'high',  // 照片质量
           success: res => {
             // 返回图片的临时路径
             resolve( res.tempImagePath);

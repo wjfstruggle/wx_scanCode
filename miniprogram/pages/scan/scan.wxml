@@ -1,8 +1,34 @@
+<import src="../template/template.wxml" />
 <!-- 拍照组件 -->
-<camera
-  device-position="back"
-  flash="off"
-  binderror="error"
-  style="width: 750rpx; height: 250px;"
-></camera>
-<image src="../../images/caoCode/btn_scan.png" mode="widthFix" type="primary" bindtap="takePhoto">拍照</image>
+<view id="mainCode">
+<!-- 背景 -->
+    <view class="borderBg" hover-stop-propagation="false">
+      <!-- top 背景-->
+        <view class='icon_title'></view>
+        <!-- 扫字框 -->
+        <view class="scan_icon_scanBorder" hover-class="none" hover-stop-propagation="false">
+            <camera
+                device-position="back"
+                flash="off"
+                binderror="error"
+                style="width: 100%; height: 100%;"
+                >
+            </camera>
+        </view>
+         <!-- 左右两侧图片 -->
+        <template is="icon_blink">   
+        </template>
+        <!-- 扫一扫和我的邮卡 -->
+        <view class="btn_wrap" hover-stop-propagation="false">
+            <view class="btn_scan" hover-stop-propagation="false">
+            <image src="../../images/caoCode/btn_scan.png" mode="widthFix" type="primary" bindtap="takePhoto"></image>
+            </view>
+            <view class="btn_mycard" hover-stop-propagation="false">
+            <!-- 跳到 我的邮卡页面-->
+            <navigator class="" hover-class="none" target="" url="../mycard/mycard" open-type="navigate">
+                <image src="../../images/caoCode/btn_mycard.png" mode="widthFix"></image>
+            </navigator>        
+        </view>
+        </view>
+    </view>
+</view>

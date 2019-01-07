@@ -1,5 +1,5 @@
 <!-- 扫邮主界面 -->
-
+<import src="../template/template.wxml" />
 <view id="mainCode">
 <!-- 背景 -->
   <view class="borderBg" hover-stop-propagation="false">
@@ -27,12 +27,8 @@
       </navigator>        
     </view>
     <!-- 左右两侧图片 -->
-    <view class="icon_blink2_box" hover-stop-propagation="false">
-        <image class="icon_blink2" src="../../images/caoCode/icon_blink2.png" mode="widthFix"></image>
-    </view>
-    <view class="icon_blink3_box" hover-stop-propagation="false">
-        <image class="icon_blink3" src="../../images/caoCode/icon_blink3.png" mode="widthFix"></image>
-    </view>
+    <template is="icon_blink">   
+    </template>
     <!-- index_icon_hand -->
     <view class="index_icon_hand" hover-stop-propagation="false">
     </view>

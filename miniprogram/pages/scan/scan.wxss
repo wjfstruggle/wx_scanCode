@@ -1,1 +1,33 @@
 /* miniprogram/pages/scan/scan.wxss */
+#mainCode .scan_icon_scanBorder {
+    background: url(http://edu.bluej.cn/public/uploads/20190107/20190107134827scan_icon_scanBorder.png) no-repeat;
+    width: 480rpx;
+    height: 480rpx;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: -5;
+    margin-top: 22rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 25rpx;
+}
+#mainCode .icon_blink2_box,
+#mainCode .icon_blink3_box{
+  bottom: 120rpx;
+}
+#mainCode .btn_wrap {
+    position: absolute;
+    bottom: 60rpx;
+    display: flex;
+    flex-direction: row;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* 扫一扫，我的邮卡 */
+#mainCode .btn_scan,
+#mainCode .btn_mycard {
+    bottom: 80rpx;
+}
+#mainCode .btn_scan {
+    margin-right: 10rpx;
+}

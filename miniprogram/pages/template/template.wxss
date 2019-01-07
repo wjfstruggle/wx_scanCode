@@ -1,0 +1,17 @@
+#mainCode .icon_blink2_box image,
+#mainCode .icon_blink3_box image{
+  width: 70rpx;
+  height: 70rpx;
+}
+#mainCode .icon_blink2_box,
+#mainCode .icon_blink3_box{
+  display: inline-block;
+  /* top: 690rpx; */
+  position: absolute;
+}
+#mainCode .icon_blink2_box {
+left: 50rpx;
+}
+#mainCode .icon_blink3_box {
+right: 40rpx;
+}
