@@ -9,7 +9,6 @@ Page({
     takeSession: false,
     requestResult: ''
   },
-
   onLoad: function() {
     if (!wx.cloud) {
       wx.redirectTo({

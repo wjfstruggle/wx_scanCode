@@ -1,1 +1,95 @@
-/* miniprogram/pages/mycard/mycard.wxss */
+/* miniprogram/pages/compound/compound.wxss */
+
+#mainCode .mycard_icon_title {
+    position: relative;
+    top: 30rpx;
+    z-index: -5;
+    width: 100%;
+    height: 779rpx;
+    background: url(http://edu.bluej.cn/public/uploads/20190106/20190106210704mycard_icon_title.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.mycard_btn_hecheng_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 210rpx;
+    height: 202rpx;
+}
+.mycard_btn_hecheng_box .mycard_btn_hecheng{ 
+    width: 100%;
+}
+#mainCode .mycard_icon_border {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -15;
+    width: 100%;
+    height: 240rpx;
+    background: url(http://edu.bluej.cn/public/uploads/20190106/20190106213333mycard_icon_broad.png) no-repeat;
+    background-size: 100% 100%;
+}
+#mainCode .mycard_icon_present {
+    position: relative;
+    top: -20rpx;
+  }
+/* 邮卡选择 */
+#mainCode .mycard_icon_select {
+    padding: 0 32rpx;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+/* 返回首页 */
+.back_to_index_box {
+    position: absolute;
+    background-color: #af2935;
+    border: 4rpx solid #2b271f;
+    border-radius: 16rpx;  
+    left: 50%;
+    bottom: 230rpx;
+    margin-bottom:20rpx;
+    transform: translateX(-50%);
+    padding: 4rpx 24rpx 7rpx;
+}
+.back_to_index_box .back_to_index{
+    width: 130rpx;
+    height: 25rpx;
+}
+.card_wrap{
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16rpx 40rpx 20rpx;
+}
+.cards {
+    flex:1;
+    text-align: center;
+    font-size: 0;
+    position: relative;
+}
+.cards image{
+    width: 100%;
+}
+.cards text{
+    color: #fff;
+    font-size: 24rpx;
+}
+.cards .number{
+    position: absolute;
+    right: 9rpx;
+    top:  5rpx;
+    font-size: 24rpx;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 30rpx;
+    height: 30rpx;
+    line-height: 30rpx;
+    text-align: center;
+}

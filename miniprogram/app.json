@@ -1,11 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/compound/compound",
-    "pages/result/result",
     "pages/mycard/mycard",
     "pages/scan/scan",
-    "pages/template/template"
+    "pages/template/template",
+    "pages/prize/prize",
+    "pages/detailPrize/detailPrize"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

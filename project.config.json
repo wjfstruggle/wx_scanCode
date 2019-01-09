@@ -38,9 +38,9 @@
 					"query": ""
 				},
 				{
-					"id": -1,
+					"id": 1,
 					"name": "scan",
-					"pathName": "pages/scan/scan",
+					"pathName": "pages/detailPrize/detailPrize",
 					"query": "name=\"scan\""
 				}
 			]

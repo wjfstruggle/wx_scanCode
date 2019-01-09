@@ -27,6 +27,7 @@ exports.main = async (event, context) => {
   const wxContext = cloud.getWXContext()
   // 返回要用的鉴权签名
   return {
-    sign
+    sign,
+    openid: wxContext.OPENID
   }
 }

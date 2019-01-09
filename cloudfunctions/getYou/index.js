@@ -12,7 +12,7 @@ cloud.init()
 const db = cloud.database()
 // 2、找到要操作的集合
 const col = db.collection('col')
-// 数据库方法，增删改查
+// 调用数据库方法，增删改查
 const _ = db.command
 
 
@@ -27,17 +27,20 @@ exports.main = async (event, context) => {
     // 随机邮字
     let rand = Math.random();
     switch (true) {
-      case (rand < 0.3):
+      case (rand < 0.2):
         type= 0;
         break;
-      case ( 0.3 <= rand && rand < 0.6):
+      case ( 0.2 <= rand && rand < 0.4):
         type= 1;
         break;
-      case (0.6 <= rand && rand < 0.9):
+      case (0.4 <= rand && rand < 0.6):
         type= 2;
         break;
-      case (rand >= 0.9):
+      case (0.6 <= rand && rand < 0.8):
         type= 3;
+        break;
+      case (rand >= 0.8):
+        type= 4;
         break;
     }
   // 用户记录为0，代表第一次使用，使用add操作。
@@ -54,7 +57,10 @@ exports.main = async (event, context) => {
       },
       {
         name: '悦享邮',type: 3,number: 0
-      }   
+      },
+      {
+        name: '邮惠生活',type: 4,number: 0
+      } 
     ]
     // 控制随机数+1
     words[type].number += 1;

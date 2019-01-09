@@ -41,3 +41,13 @@
   width: 274rpx;
   height: 74rpx;
 }
+/* 礼盒 */
+#mainCode .mycard_icon_present {
+  z-index: -15;
+  width: 688rpx;
+  height: 256rpx;
+  background: url(http://edu.bluej.cn/public/uploads/20190106/20190106211357mycard_icon_present.png) no-repeat;
+  background-size: 100% 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}

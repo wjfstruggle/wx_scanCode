@@ -1,0 +1,80 @@
+/* miniprogram/pages/detailPrize/detailPrize.wxss */
+#mainCode .icon_title2 {
+  position: relative;
+  top: 30rpx;
+  z-index: -5;
+  width: 690rpx;
+  height: 275rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#mainCode .icon_title2 image {
+  width: 100%;
+}
+#mainCode .product_detail {
+  background: url(http://edu.bluej.cn/public/uploads/20190107/20190107094845product_detail.png) no-repeat;
+  width: 450rpx;
+  height: 186rpx;
+  background-size: 100% 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 25rpx;
+}
+.product_detail .text {
+  display: block;
+  color: #e1d7ad;
+  font-size: 22rpx;
+  text-align: left;
+  line-height:22rpx;
+}
+.dai_detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0rpx 60rpx;
+}
+.dai_detail_box text{
+  color: #e1d7ad;
+  font-size: 22rpx;
+}
+.dai_detail_box .prize_detail_img{
+  width: 30rpx;
+  height: 24rpx;
+}
+.dai_detail_box .prize_detail_use {
+  margin-left: 10rpx;
+}
+.dai_detail_box .prize_detail_img,
+.dai_detail_box .prize_detail_use {
+  display: inline-block;
+  vertical-align: middle;
+}
+.dai_detail_box .left_text {
+  margin-left: 40rpx;
+}
+.dai_detail_box .app {
+  color: #e8c819;
+}
+/* 二维码 */
+.code {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.code .code_app {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+}
+.code image {
+  width: 130rpx;
+  height: 130rpx;
+}
+.code .code_text {
+  margin-top: 20rpx;
+  color: #fff;
+  font-size: 18rpx;
+}

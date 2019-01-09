@@ -18,12 +18,13 @@ App({
       },
       success: res => {
         // 将sign值存到globalData
-        console.log(res);
         this.globalData.sign = res.result.sign
+        this.globalData.openid = res.result.openid
       }
     })
     this.globalData = {
-      sign: null
+      sign: null,
+      openid: null
     }
   }
 })

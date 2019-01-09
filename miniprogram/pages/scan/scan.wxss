@@ -31,3 +31,7 @@
 #mainCode .btn_scan {
     margin-right: 10rpx;
 }
+
+#mainCode .cover-view{
+    border: 1px solid #af2935;
+}

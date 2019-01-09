@@ -13,6 +13,7 @@
                 binderror="error"
                 style="width: 100%; height: 100%;"
                 >
+                <!-- <cover-view class="cover-view" scroll-top="0"></cover-view> -->
             </camera>
         </view>
          <!-- 左右两侧图片 -->
@@ -21,7 +22,7 @@
         <!-- 扫一扫和我的邮卡 -->
         <view class="btn_wrap" hover-stop-propagation="false">
             <view class="btn_scan" hover-stop-propagation="false">
-            <image src="../../images/caoCode/btn_scan.png" mode="widthFix" type="primary" bindtap="takePhoto"></image>
+                <image src="../../images/caoCode/btn_scan.png" mode="widthFix" type="primary" bindtap="takePhoto"></image>
             </view>
             <view class="btn_mycard" hover-stop-propagation="false">
             <!-- 跳到 我的邮卡页面-->

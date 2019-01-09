@@ -1,2 +1,43 @@
-<!--miniprogram/pages/mycard/mycard.wxml-->
-<text>miniprogram/pages/mycard/mycard.wxml</text>
+<!--立即合成界面-->
+
+<view id="mainCode">
+  <!-- 背景 -->
+  <view class="borderBg">
+    <!-- top 背景-->
+    <view class='mycard_icon_title'></view>
+    <!-- 礼盒 -->
+    <view class="mycard_icon_present"></view>
+    <!-- 立即合成图标 -->
+    <view class="mycard_btn_hecheng_box">
+      <image class="mycard_btn_hecheng" bind bind:tap="merge" 
+      data-prize="{{prize}}" src="../../images/caoCode/mycard_btn_hecheng.png" mode="widthFix"></image>
+    </view>
+    <!-- 返回首页 -->
+    <navigator class="" target="" url="../index/index" hover-class="none" open-type="reLaunch">
+      <view class="back_to_index_box">
+        <image class="back_to_index" 
+        src="../../images/caoCode/back_to_index.png" mode="widthFix"></image>
+      </view>
+    </navigator>
+    <!-- 底部 -->
+    <view class="mycard_icon_border">
+      <view class="mycard_icon_select">
+        <!-- 三齐邮 -->
+        <!-- 邮卡 -->
+        <view class="card_broad">
+          <view class="card_wrap">
+            <view class="cards" wx:for="{{words}}" data-index='{{item.type}}' wx:key="index" bindtap='select'>
+              <text class="number">{{item.number}}</text>
+              <!-- item.check 默认是没有这个属性，相当于false -->
+              <image class="" hidden="{{item.check}}" src="../../images/caoCode/mycard_icon_noselect.png" mode="widthFix"></image>
+              <!-- item.check 为true代表选中 -->
+              <image class="" hidden="{{!item.check}}" src="../../images/caoCode/mycard_icon_selected.png" mode="widthFix"></image>
+              <text>{{item.name}}</text>
+            </view>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

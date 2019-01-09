@@ -1,0 +1,34 @@
+<!--获奖界面-->
+<view id="mainCode">
+<!-- 背景 -->
+  <view class="borderBg">
+      <!-- 恭喜你-->
+      <view class="mycard_icon_bgmsg" hover-class="none" >
+        <image class="img_prize"
+        src="{{prizeDetail[prizeIndex].img}}" mode="widthFix">         
+        </image>
+        <!-- 积分 -->
+        <text class="integral">{{prizeDetail[prizeIndex].integral}}积分</text>
+        <image class="personInfo_icon_present" src="../../images/caoCode/personInfo_icon_present.png" mode="widthFix">
+        </image>
+      </view>
+  </view>
+  <!-- 查看详情按钮 -->
+      <view class="detail_prize" hover-class="none">
+        <view class="personInfo_icon_bgInfo">
+          <view class="user">
+            <text>姓名：</text> <input class="" value="" type="text" bindinput="bindinputName"></input>
+        </view>
+        <view class="user">
+           <text>手机号码：</text><input bindinput="bindinputNumber" style="width:240rpx;" class="" value="" type="number"></input>
+        </view>
+        <view class="user">
+           <text>地址：</text> <input bindinput="bindinputAddr" class="" value="" type="text"></input>
+        </view>
+        </view>
+          <image class="personInfo_btn_submit"         bindtap="bindSubmitInfo" 
+          data-prizeIndex='{{prizeIndex}}'
+          src="../../images/caoCode/personInfo_btn_submit.png" mode="widthFix">
+          </image>
+      </view>
+</view>

@@ -1,0 +1,78 @@
+/* miniprogram/pages/prize/prize.wxss */
+#mainCode .mycard_icon_bgmsg {
+    position: relative;
+    top: 50rpx;
+    z-index: -15;
+    width: 688rpx;
+    height: 641rpx;
+    background: url(http://edu.bluej.cn/public/uploads/20190109/20190109095738mycard_icon_bgmsg.png) no-repeat;
+    background-size: 100% 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.mycard_icon_bgmsg .img_prize {
+  width: 325rpx;
+  height: 150rpx;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -36%);
+}
+#mainCode .integral {
+  position:absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  color: #ffdb00;
+  font-size: 60rpx;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#mainCode .personInfo_icon_present {
+  width: 325rpx;
+  height: 180rpx;
+  position:absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%,-70%);
+}
+#mainCode .detail_prize {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -62%);
+}
+.personInfo_icon_bgInfo {
+    padding: 60rpx;
+    position: absolute;
+    bottom: -377rpx;
+    z-index: -15;
+    width:480rpx;
+    height:367rpx;    
+    background: url(http://edu.bluej.cn/public/uploads/20190109/20190109163446personInfo_icon_bgInfo.png) no-repeat;
+    background-size: 100% 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.personInfo_btn_submit {
+  width: 304rpx;
+  height: 74rpx;
+  position: absolute;
+  bottom: -379rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 35rpx;
+}
+.user text{
+  font-size: 30rpx;
+}
+.user input {
+  width: 300rpx;
+  border-bottom: 1px solid #000;
+}
