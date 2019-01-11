@@ -1,0 +1,35 @@
+<!-- 扫邮主界面 -->
+<import src="../template/template.wxml" />
+<view id="mainCode">
+<!-- 背景 -->
+  <view class="borderBg" hover-stop-propagation="false">
+      <!-- top 背景-->
+    <view class='icon_title2'></view>
+    <!-- 游客来驿站背景 -->
+    <view class="youdai">
+      <image class="youdai-img" src="{{detailResultInfo[index].img1}}">  
+      </image>
+    </view>
+    <!-- 内容 -->
+    <view class="content">
+     <image class="content-img" src="{{detailResultInfo[index].img2}}">  
+      </image>
+    </view>
+    <!-- building -->
+    <view class="building" style='background-image: url({{detailResultInfo[index].img3}})'>
+    </view>
+    <!-- 信息 背景icon_bgTips-->
+    <view class="icon_bgTips">
+    <!-- http://edu.bluej.cn/public/uploads/20190111/20190111113023icon_bgTips.png -->
+      <text class="text1">1.{{detailResultInfo[index].product_detail.text1}}</text>
+      <text class="text1">2.{{detailResultInfo[index].product_detail.text2}}</text>
+      <text class="text1">3.{{detailResultInfo[index].product_detail.text3}}</text>
+      <view class="detail-box" bind:tap="detailPrize">
+        查看详情
+      </view>
+    </view>
+    <!-- 收下邮卡 -->
+    <image class="icon_btn_reception" bindtap="recepeMycard"
+    src="../../images/caoCode/icon_btn_reception.png" mode="widthFix" bind:tap=""></image>
+  </view>
+</view>

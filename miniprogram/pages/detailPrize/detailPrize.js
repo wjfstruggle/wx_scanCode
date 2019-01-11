@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    prizeIndex: 0,
+    index: 0,
     detailPrizeInfo: [
       {
         // 邮学贷
@@ -81,9 +81,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let prizeIndex = options.prizeIndex
+    let index = options.index
     this.setData({
-      prizeIndex: prizeIndex
+      index: index
     }) 
   },
 })

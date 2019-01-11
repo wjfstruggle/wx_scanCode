@@ -6,22 +6,22 @@
      <view class="borderBg">
       <!-- top 背景-->
         <view class='icon_title2'>
-          <image class="" src="{{detailPrizeInfo[prizeIndex].img}}" mode="widthFix" lazy-load="false">
+          <image class="" src="{{detailPrizeInfo[index].img}}" mode="widthFix" lazy-load="false">
           </image>
         </view>
         <!-- 邮贷 -->
         <view class="product_detail">
             <text class="text">
-                {{detailPrizeInfo[prizeIndex].product_detail.text1}}
+                {{detailPrizeInfo[index].product_detail.text1}}
             </text>
             <text class="text">
-                {{detailPrizeInfo[prizeIndex].product_detail.text2}}
+                {{detailPrizeInfo[index].product_detail.text2}}
             </text>
             <text class="text">
-                {{detailPrizeInfo[prizeIndex].product_detail.text3}}
+                {{detailPrizeInfo[index].product_detail.text3}}
             </text>
-            <text class="text" wx:if="{{detailPrizeInfo[prizeIndex].product_detail.text4}}">
-                {{detailPrizeInfo[prizeIndex].product_detail.text4}}
+            <text class="text" wx:if="{{detailPrizeInfo[index].product_detail.text4}}">
+                {{detailPrizeInfo[index].product_detail.text4}}
             </text>
         </view>
         <!-- 信息详情 -->
@@ -30,43 +30,43 @@
             <image class="prize_detail_img" src="../../images/caoCode/prize_detail_use.png" mode="widthFix"></image>
             <text class="prize_detail_use">贷款用途：</text>
             <view class="left_text" >
-              <text class="">{{detailPrizeInfo[prizeIndex].prize_detail_use}}</text>
+              <text class="">{{detailPrizeInfo[index].prize_detail_use}}</text>
             </view>
           </view>
           <view class="dai_detail_box">
             <image class="prize_detail_img" src="../../images/caoCode/prize_detail_person.png" mode="widthFix"></image>
             <text class="prize_detail_use">贷款对象：</text>
             <view class="left_text" >
-              <text class="">{{detailPrizeInfo[prizeIndex].prize_detail_person}}</text>
+              <text class="">{{detailPrizeInfo[index].prize_detail_person}}</text>
             </view>
           </view>
           <view class="dai_detail_box">
             <image class="prize_detail_img" src="../../images/caoCode/prize_detail_tips.png" mode="widthFix"></image>
             <text class="prize_detail_use">温馨提示：</text>
-            <view class="left_text" wx:if="{{detailPrizeInfo[prizeIndex].prize_detail_tips}}">
-              <text class="">{{detailPrizeInfo[prizeIndex].prize_detail_tips}}</text>
+            <view class="left_text" wx:if="{{detailPrizeInfo[index].prize_detail_tips}}">
+              <text class="">{{detailPrizeInfo[index].prize_detail_tips}}</text>
             </view>
           </view>
           <view class="dai_detail_box">
             <image class="prize_detail_img" src="../../images/caoCode/prize_detail_way.png" mode="widthFix"></image>
             <text class="prize_detail_use">申请方法：</text>
             <view class="left_text" >
-              <text class=""><text class="app">{{detailPrizeInfo[prizeIndex].prize_detail_way}}</text>{{detailPrizeInfo[prizeIndex].prize_detail_way_tip}}</text>
+              <text class=""><text class="app">{{detailPrizeInfo[index].prize_detail_way}}</text>{{detailPrizeInfo[index].prize_detail_way_tip}}</text>
             </view>
           </view>
         </view>
         <!-- 二维码 -->
         <view class="code">
           <view class="code_app">
-              <image class="" src="{{detailPrizeInfo[prizeIndex].img1}}" mode="widthFix"> 
+              <image class="" src="{{detailPrizeInfo[index].img1}}" mode="widthFix"> 
               </image>
-              <text class="code_text">{{detailPrizeInfo[prizeIndex].code_text1}}</text>
+              <text class="code_text">{{detailPrizeInfo[index].code_text1}}</text>
           </view>
-          <view class="code_app" wx:if="{{detailPrizeInfo[prizeIndex].img2}}">
+          <view class="code_app" wx:if="{{detailPrizeInfo[index].img2}}">
             <image class="margin"
-            src="{{detailPrizeInfo[prizeIndex].img2}}" mode="widthFix">
+            src="{{detailPrizeInfo[index].img2}}" mode="widthFix">
             </image>
-            <text class="code_text">{{detailPrizeInfo[prizeIndex].code_text2}}</text>
+            <text class="code_text">{{detailPrizeInfo[index].code_text2}}</text>
           </view>
         </view>
     </view>

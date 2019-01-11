@@ -63,21 +63,21 @@ exports.main = async (event, context) => {
       } 
     ]
     // 控制随机数+1
-    words[type].number += 1;
+    // words[type].number += 1;
     let data = {
       '_openid': wxContext.OPENID,
       'words': words,
       prize: null,  // 奖品
-      updateTime: '', // 每天更新时间
-      times: 1  // 次数
+      updateTime: getDay(), // 每天更新时间
+      times: 3  // 每天最多扫三次数
     }
     // 增,添加数据库操作
-    let result = await col.add({
+    let user = await col.add({
       data: data
     })
     return {
       msg: '添加成功',
-      result: result
+      user: user
     }
   } else {
     // 除了第一次外，都是更新操作。
@@ -86,13 +86,13 @@ exports.main = async (event, context) => {
     if (user.times <= 0 && user.updateTime == getDay()) {
       return {
         msg: '今天的次数已经用完，明天继续',
-        success: false
+        user: user
       }
     }
     // times代表剩余次数，在第二天时重置
     let times;
     if (user.updateTime !== getDay()) {
-      times = 1
+      times = 3
     }
     // 增加一个
     user.words[type].number += 1;
@@ -101,14 +101,18 @@ exports.main = async (event, context) => {
       // 更新值
     }).update({
       data: {
-        'words': user.words,
-        'times':times ||  _.inc(-1), // 可用次数减一
+        'words':user.words,
+        // 可用次数-1
+        'times': times || _.inc(-1),
+        // 获取今天日期
         'updateTime': getDay()
       }
     })
     return {
       msg: '修改成功',
-      result: result
+      result: result,
+      user: user,
+      type: type
     }
   }
 }

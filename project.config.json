@@ -40,7 +40,7 @@
 				{
 					"id": 1,
 					"name": "scan",
-					"pathName": "pages/detailPrize/detailPrize",
+					"pathName": "pages/result/result",
 					"query": "name=\"scan\""
 				}
 			]

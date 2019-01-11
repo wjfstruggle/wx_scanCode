@@ -14,7 +14,6 @@ App({
       // 要调用的云函数名称
       name: 'sign',
       data: {
-
       },
       success: res => {
         // 将sign值存到globalData
